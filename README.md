@@ -27,6 +27,6 @@ or
 <script src="https://cdn.rawgit.com/richardanaya/rxjs-pubsub/master/rxjs-pubsub.js"></script>
 ```
 
-#Additional details
+#Additional Details
 
 This may seem like a simple library you may want to make yourself! Keep in mind that rxjs streams out of the box don't handle errors or completion very well for this type of setup. Keep the power of rxjs and checkout the code how I handled this!
