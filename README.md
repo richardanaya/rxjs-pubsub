@@ -18,7 +18,7 @@ It's that easy!
 #Install
 
 ```
-npm instsall rxjs-pubsub
+npm install rxjs-pubsub
 ```
 
 or
