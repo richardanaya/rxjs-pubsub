@@ -10,7 +10,7 @@ var eventbus = pubsub.create();
 eventbus("foo").subscribe((o)=>console.log(o));
 
 //3. publish to a subscriber
-eventbus.publish("foo")
+eventbus.publish("foo","bar")
 ```
 
 It's that easy!
