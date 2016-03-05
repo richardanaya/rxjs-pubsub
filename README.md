@@ -15,7 +15,7 @@ eventbus.publish("foo")
 
 It's that easy!
 
-#install
+#Install
 
 ```
 npm instsall rxjs-pubsub
