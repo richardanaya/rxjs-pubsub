@@ -10,7 +10,7 @@
   }
 
   var CustomSubject = function(){
-      Rx.Subject.call(this);
+      rx.Subject.call(this);
   }
   CustomSubject.prototype = Object.create(rx.Subject.prototype);
   CustomSubject.prototype.onCompleted = function(){}
