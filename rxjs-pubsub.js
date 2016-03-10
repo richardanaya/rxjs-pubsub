@@ -2,17 +2,13 @@
 // repo    : https://github.com/richardanaya/rxjs-pubsub
 // license : MIT
 
-(function (window, module) {
+(function (window, module, Rx) {
   "use strict";
-  var rx = Rx;
-  if(!rx){
-    rx = require("rxjs")
-  }
 
   var CustomSubject = function(){
-      rx.Subject.call(this);
+      Rx.Subject.call(this);
   }
-  CustomSubject.prototype = Object.create(rx.Subject.prototype);
+  CustomSubject.prototype = Object.create(Rx.Subject.prototype);
   CustomSubject.prototype.onCompleted = function(){}
   CustomSubject.prototype.onError = function(error){
       this.error = error;
@@ -47,5 +43,6 @@
   };
 })(
   typeof window !== "undefined" ? window : {},
-  typeof module !== "undefined" ? module : {}
+  typeof module !== "undefined" ? module : {},
+  typeof require !== "undefined" ? require("rxjs") : Rx
 );
