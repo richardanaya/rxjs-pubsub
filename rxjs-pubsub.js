@@ -4,11 +4,15 @@
 
 (function (window, module) {
   "use strict";
+  var rx = Rx;
+  if(!rx){
+    rx = require("rxjs")
+  }
 
   var CustomSubject = function(){
       Rx.Subject.call(this);
   }
-  CustomSubject.prototype = Object.create(Rx.Subject.prototype);
+  CustomSubject.prototype = Object.create(rx.Subject.prototype);
   CustomSubject.prototype.onCompleted = function(){}
   CustomSubject.prototype.onError = function(error){
       this.error = error;
