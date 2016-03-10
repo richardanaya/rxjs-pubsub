@@ -1,6 +1,6 @@
 {
   "name": "rxjs-pubsub",
-  "version": "0.0.8",
+  "version": "0.1.0",
   "description": "A simple pubsub using rxjs",
   "main": "rxjs-pubsub.js",
   "scripts": {
@@ -13,6 +13,6 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "rxjs": "^5.0.0-beta.2"
+    "rx": "4.1.0"
   }
 }

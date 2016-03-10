@@ -44,5 +44,5 @@
 })(
   typeof window !== "undefined" ? window : {},
   typeof module !== "undefined" ? module : {},
-  typeof require !== "undefined" ? require("rxjs") : Rx
+  typeof require !== "undefined" ? require("rx") : Rx
 );
