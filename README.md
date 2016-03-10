@@ -24,6 +24,7 @@ npm install rxjs-pubsub
 or
 
 ```
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/4.1.0/rx.all.js"></script>
 <script src="https://cdn.rawgit.com/richardanaya/rxjs-pubsub/master/rxjs-pubsub.js"></script>
 ```
 
