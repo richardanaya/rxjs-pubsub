@@ -27,15 +27,17 @@
         listener.onNext(value)
      }
     }
-    function subscribe(channel){
+    function subscribe(channel,handler){
      var listener = listeners[channel];
      if(listener==null){
         listeners[channel] = listener = new CustomSubject();
      }
-     return listener;
+     return listener.subscribe(handler);
     }
-    subscribe.publish = publish;
-    return subscribe;
+    return {
+      publish:publish,
+      subscribe:subscribe
+    };
   }
 
   window.pubsub = module.exports = {
