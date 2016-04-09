@@ -27,20 +27,18 @@
         listener.onNext(value)
      }
     }
-    function subscribe(channel,handler){
+    function subscribe(channel){
      var listener = listeners[channel];
      if(listener==null){
         listeners[channel] = listener = new CustomSubject();
      }
-     return listener.subscribe(handler);
+     return listener;
     }
-    return {
-      publish:publish,
-      subscribe:subscribe
-    };
+    subscribe.publish = publish;
+    return subscribe;
   }
 
-  window.pubsub = module.exports = {
+  window.RxJsPubSub = module.exports = {
     create : create
   };
 })(
