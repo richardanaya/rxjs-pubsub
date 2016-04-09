@@ -7,7 +7,7 @@ Out of the box, rxjs doesn't really have a good publish-subscription data struct
 var eventbus = pubsub.create();
 
 //2. subscribe to publisher
-eventbus.subscribe("foo",(o)=>console.log(o));
+eventbus("foo").subscribe((o)=>console.log(o));
 
 //3. publish to a subscriber
 eventbus.publish("foo","bar")
